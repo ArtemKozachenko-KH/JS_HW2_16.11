@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        let a = 0;
+        a = parseInt(prompt("Введите длину стороны квадрата:", "1"));
+        alert("Периметр квадрата = " + 4 * a);
+    </script>
+
+    <script>
+        let b = 0;
+        b = parseFloat(prompt("Введите радиус окружности:", "1"));
+        alert("Площадь окружности = " + b * b * 3.14);
+    </script>
+
+    <script>
+        let s, t = 0;
+        s = parseFloat(prompt("Введите растояние между городами в км:", "1"));
+        t = parseFloat(prompt("Введите время за которое вы хотите добратся в часах:", "2"));
+        alert("Вам следует ехать со скоростью = " + s / t + "км/ч");
+    </script>
+
+    <script>
+        const eur = 1.1;
+        let usd = 0;
+        usd = parseFloat(prompt("Введите кол-во $:", "100"));
+        alert("Вы получите = " + usd * eur + "Є");
+    </script>
+
+    <script>
+        const file = 820;
+        let flash = 0;
+        flash = parseInt(prompt("Введите гб на флешке:", "5"));
+        alert("На флешки поместится = " + parseInt(flash * 1024 / file) + " файлов");
+    </script>
+
+    <script>
+        let num = "";
+        let temp = "";
+        while (temp.length != 5) {
+            temp = prompt("Введите 5-значное число:", "12345");
+        }
+        num = "" + parseInt(temp[4]) + parseInt(temp[0]) + parseInt(temp[1]) + parseInt(temp[2]) + parseInt(temp[3])
+
+        alert("Ваше новое число = " + num);
+    </script>
+
+    <script>
+        let sal = 250;
+        let sold = -1;
+        while (sold < 0) {
+            sold = prompt("Введите сумму продаж:", "2000");
+        }
+        alert("Зарплата работника = " + parseInt(sal + sold * 0.1) + "$");
+    </script>
+
+</body>
+
+</html>
